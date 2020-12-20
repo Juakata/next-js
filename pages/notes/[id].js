@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import '../../src/style.module.css';
 
 const Page = () => {
   const router = useRouter();
@@ -7,7 +8,7 @@ const Page = () => {
 
   return (
     <div>
-      <h1>Note {id}</h1>
+      <h1 className="white-class">Note {id}</h1>
       <button type="button" onClick={() => router.push('/')}>
         Go Home
       </button>
